@@ -1,20 +1,29 @@
-//
-//  AppDelegate.swift
-//  fast-bar
-//
-//  Created by Andrew Breckenridge on 11/1/21.
-//
-
 import Cocoa
+import AppKit
+import Combine
 
-@main
 class AppDelegate: NSObject, NSApplicationDelegate {
-
-
+    
+    let statusBar = NSStatusBar()
+    lazy var statusItem = statusBar.statusItem(withLength: CGFloat(NSStatusItem.variableLength))
+    
+    let network = NetworkQuality()
+    private var cancellables = Set<AnyCancellable>()
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+        guard let menuBarButton = statusItem.button else { fatalError("status bar didn't have button?") }
+        
+        statusItem.menu = NSMenu()
+        statusItem.menu!.items = [NSMenuItem(title: "Quit", action: #selector(tappedQuit), keyEquivalent: "q")]
+                
+        network.display
+            .receive(on: RunLoop.main)
+            .sink { [weak menuBarButton] in
+                menuBarButton?.title = $0
+            }
+            .store(in: &cancellables)
     }
-
+    
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
@@ -23,6 +32,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         return true
     }
 
-
+    @objc private func tappedQuit() {
+        exit(0)
+    }
 }
 
