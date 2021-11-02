@@ -16,6 +16,7 @@ class NetworkQuality {
     
     @Published private var connectionState: NWPath.Status? = nil
     @Published private var speed: SpeedInfo? = nil
+    @Published private var forceRefreshSubject = PassthroughSubject<Void, Never>()
 
     private let startTime = Date()
     private let monitorQueue = DispatchQueue(label: "fast-bar_Network_Background", qos: .background)
@@ -25,17 +26,19 @@ class NetworkQuality {
     init() {
         monitor.pathUpdateHandler = { [weak self] in
             self?.connectionState = $0.status
+            self?.speed = nil
         }
         monitor.start(queue: monitorQueue)
         
-        Publishers.Merge(
+        Publishers.Merge3(
             $connectionState.map { _ in },
-            Timer.TimerPublisher.init(interval: 60, tolerance: 30, runLoop: RunLoop.current, mode: RunLoop.Mode.default).map { _ in }
+            Timer.TimerPublisher.init(interval: 60, tolerance: 30, runLoop: RunLoop.current, mode: RunLoop.Mode.default).map { _ in },
+            forceRefreshSubject
         )
-            .throttle(for: 60, scheduler: monitorQueue, latest: true)
+            .receive(on: monitorQueue)
             .flatMap { [unowned self] _ -> Future<SpeedInfo, Never> in
                 print("testing quality \(startTime.timeIntervalSinceNow)")
-                return networkQuality(onQueue: self.monitorQueue)
+                return networkQuality()
             }
             .sink {
                 self.speed = $0
@@ -65,9 +68,13 @@ class NetworkQuality {
             }
             .eraseToAnyPublisher()
     }
+
+    func forceRefresh() {
+        forceRefreshSubject.send()
+    }
 }
 
-private func networkQuality(onQueue queue: DispatchQueue) -> Future<SpeedInfo, Never> {
+private func networkQuality() -> Future<SpeedInfo, Never> {
     return Future { promise in
         assert(!Thread.isMainThread)
         
@@ -88,7 +95,7 @@ private func networkQuality(onQueue queue: DispatchQueue) -> Future<SpeedInfo, N
             return
         }
         
-        print(String(data: data, encoding: .utf8)?.debugDescription)
+        print(String(data: data, encoding: .utf8)?.debugDescription as Any)
         print(json)
         promise(.success(SpeedInfo(ping: json["responsiveness"] as! Int, upload: json["ul_throughput"] as! Int, download: json["dl_throughput"] as! Int)))
     }
