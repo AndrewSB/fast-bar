@@ -32,7 +32,7 @@ class NetworkQuality {
         
         Publishers.Merge3(
             $connectionState.map { _ in },
-            Timer.TimerPublisher.init(interval: 60, tolerance: 30, runLoop: RunLoop.current, mode: RunLoop.Mode.default).map { _ in },
+            Timer.TimerPublisher.init(interval: 75, tolerance: 20, runLoop: RunLoop.current, mode: RunLoop.Mode.default).autoconnect().map { _ in },
             forceRefreshSubject
         )
             .receive(on: monitorQueue)
