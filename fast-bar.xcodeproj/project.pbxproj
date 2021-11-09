@@ -7,21 +7,72 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4630E5AE273742F90043EE95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4630E5A8273742F90043EE95 /* Assets.xcassets */; };
 		4630E5AF273742F90043EE95 /* NetworkQuality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4630E5A9273742F90043EE95 /* NetworkQuality.swift */; };
-		4630E5B0273742F90043EE95 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4630E5AA273742F90043EE95 /* main.swift */; };
-		4630E5B1273742F90043EE95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4630E5AB273742F90043EE95 /* AppDelegate.swift */; };
-		4630E5B2273742F90043EE95 /* MenuBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4630E5AD273742F90043EE95 /* MenuBarViewController.swift */; };
+		46D4D7A1273A6F49004D63C0 /* speedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D4D792273A6F47004D63C0 /* speedApp.swift */; };
+		46D4D7A2273A6F49004D63C0 /* speedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D4D792273A6F47004D63C0 /* speedApp.swift */; };
+		46D4D7A3273A6F49004D63C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D4D793273A6F47004D63C0 /* ContentView.swift */; };
+		46D4D7A4273A6F49004D63C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D4D793273A6F47004D63C0 /* ContentView.swift */; };
+		46D4D7A5273A6F49004D63C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46D4D794273A6F49004D63C0 /* Assets.xcassets */; };
+		46D4D7A6273A6F49004D63C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46D4D794273A6F49004D63C0 /* Assets.xcassets */; };
+		46D4D7B2273A6F98004D63C0 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D4D780273A6ED0004D63C0 /* WidgetKit.framework */; platformFilter = maccatalyst; };
+		46D4D7B3273A6F98004D63C0 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D4D782273A6ED0004D63C0 /* SwiftUI.framework */; platformFilter = maccatalyst; };
+		46D4D7B6273A6F98004D63C0 /* speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D4D7B5273A6F98004D63C0 /* speed.swift */; };
+		46D4D7B9273A6F99004D63C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46D4D7B8273A6F99004D63C0 /* Assets.xcassets */; };
+		46D4D7BB273A6F99004D63C0 /* speed.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 46D4D7B7273A6F98004D63C0 /* speed.intentdefinition */; };
+		46D4D7BC273A6F99004D63C0 /* speed.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 46D4D7B7273A6F98004D63C0 /* speed.intentdefinition */; };
+		46D4D7BF273A6F99004D63C0 /* speedExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 46D4D7B1273A6F98004D63C0 /* speedExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		46D4D7CB273A701C004D63C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46D4D7C6273A701C004D63C0 /* Assets.xcassets */; };
+		46D4D7CC273A701C004D63C0 /* MenuBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D4D7C7273A701C004D63C0 /* MenuBarViewController.swift */; };
+		46D4D7CD273A701C004D63C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D4D7C8273A701C004D63C0 /* AppDelegate.swift */; };
+		46D4D7CE273A701C004D63C0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D4D7C9273A701C004D63C0 /* main.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		46D4D7BD273A6F99004D63C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46C404F82730791400E91892 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46D4D7B0273A6F98004D63C0;
+			remoteInfo = speedExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		46D4D7C3273A6F99004D63C0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				46D4D7BF273A6F99004D63C0 /* speedExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		4630E5A7273742F90043EE95 /* fast_bar.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = fast_bar.entitlements; sourceTree = "<group>"; };
-		4630E5A8273742F90043EE95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4630E5A9273742F90043EE95 /* NetworkQuality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkQuality.swift; sourceTree = "<group>"; };
-		4630E5AA273742F90043EE95 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		4630E5AB273742F90043EE95 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4630E5AD273742F90043EE95 /* MenuBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuBarViewController.swift; sourceTree = "<group>"; };
 		46C405002730791400E91892 /* fast-bar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fast-bar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46D4D780273A6ED0004D63C0 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		46D4D782273A6ED0004D63C0 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		46D4D792273A6F47004D63C0 /* speedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = speedApp.swift; sourceTree = "<group>"; };
+		46D4D793273A6F47004D63C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		46D4D794273A6F49004D63C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46D4D799273A6F49004D63C0 /* speed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = speed.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46D4D79E273A6F49004D63C0 /* speed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = speed.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46D4D7A0273A6F49004D63C0 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		46D4D7B1273A6F98004D63C0 /* speedExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = speedExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		46D4D7B5273A6F98004D63C0 /* speed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = speed.swift; sourceTree = "<group>"; };
+		46D4D7B7273A6F98004D63C0 /* speed.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = speed.intentdefinition; sourceTree = "<group>"; };
+		46D4D7B8273A6F99004D63C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46D4D7BA273A6F99004D63C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46D4D7C5273A701C004D63C0 /* fast_bar.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = fast_bar.entitlements; sourceTree = "<group>"; };
+		46D4D7C6273A701C004D63C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46D4D7C7273A701C004D63C0 /* MenuBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuBarViewController.swift; sourceTree = "<group>"; };
+		46D4D7C8273A701C004D63C0 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		46D4D7C9273A701C004D63C0 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		46D4D7CA273A701C004D63C0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,18 +83,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		46D4D796273A6F49004D63C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46D4D79B273A6F49004D63C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46D4D7AE273A6F98004D63C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46D4D7B3273A6F98004D63C0 /* SwiftUI.framework in Frameworks */,
+				46D4D7B2273A6F98004D63C0 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		46C404F72730791400E91892 = {
 			isa = PBXGroup;
 			children = (
-				4630E5AB273742F90043EE95 /* AppDelegate.swift */,
-				4630E5A8273742F90043EE95 /* Assets.xcassets */,
-				4630E5A7273742F90043EE95 /* fast_bar.entitlements */,
-				4630E5AA273742F90043EE95 /* main.swift */,
-				4630E5AD273742F90043EE95 /* MenuBarViewController.swift */,
-				4630E5A9273742F90043EE95 /* NetworkQuality.swift */,
+				46D4D7C4273A701C004D63C0 /* menubar */,
+				46D4D791273A6F47004D63C0 /* Shared */,
+				46D4D79F273A6F49004D63C0 /* app */,
+				46D4D77F273A6ED0004D63C0 /* Frameworks */,
 				46C405012730791400E91892 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,8 +124,64 @@
 			isa = PBXGroup;
 			children = (
 				46C405002730791400E91892 /* fast-bar.app */,
+				46D4D799273A6F49004D63C0 /* speed.app */,
+				46D4D79E273A6F49004D63C0 /* speed.app */,
+				46D4D7B1273A6F98004D63C0 /* speedExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		46D4D77F273A6ED0004D63C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46D4D780273A6ED0004D63C0 /* WidgetKit.framework */,
+				46D4D782273A6ED0004D63C0 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		46D4D791273A6F47004D63C0 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				4630E5A9273742F90043EE95 /* NetworkQuality.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		46D4D79F273A6F49004D63C0 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				46D4D7B4273A6F98004D63C0 /* widget */,
+				46D4D792273A6F47004D63C0 /* speedApp.swift */,
+				46D4D793273A6F47004D63C0 /* ContentView.swift */,
+				46D4D794273A6F49004D63C0 /* Assets.xcassets */,
+				46D4D7A0273A6F49004D63C0 /* macOS.entitlements */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		46D4D7B4273A6F98004D63C0 /* widget */ = {
+			isa = PBXGroup;
+			children = (
+				46D4D7B5273A6F98004D63C0 /* speed.swift */,
+				46D4D7B7273A6F98004D63C0 /* speed.intentdefinition */,
+				46D4D7B8273A6F99004D63C0 /* Assets.xcassets */,
+				46D4D7BA273A6F99004D63C0 /* Info.plist */,
+			);
+			path = widget;
+			sourceTree = "<group>";
+		};
+		46D4D7C4273A701C004D63C0 /* menubar */ = {
+			isa = PBXGroup;
+			children = (
+				46D4D7C5273A701C004D63C0 /* fast_bar.entitlements */,
+				46D4D7C6273A701C004D63C0 /* Assets.xcassets */,
+				46D4D7C7273A701C004D63C0 /* MenuBarViewController.swift */,
+				46D4D7C8273A701C004D63C0 /* AppDelegate.swift */,
+				46D4D7C9273A701C004D63C0 /* main.swift */,
+				46D4D7CA273A701C004D63C0 /* Info.plist */,
+			);
+			path = menubar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -76,6 +204,59 @@
 			productReference = 46C405002730791400E91892 /* fast-bar.app */;
 			productType = "com.apple.product-type.application";
 		};
+		46D4D798273A6F49004D63C0 /* speed (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46D4D7A7273A6F49004D63C0 /* Build configuration list for PBXNativeTarget "speed (iOS)" */;
+			buildPhases = (
+				46D4D795273A6F49004D63C0 /* Sources */,
+				46D4D796273A6F49004D63C0 /* Frameworks */,
+				46D4D797273A6F49004D63C0 /* Resources */,
+				46D4D7C3273A6F99004D63C0 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46D4D7BE273A6F99004D63C0 /* PBXTargetDependency */,
+			);
+			name = "speed (iOS)";
+			productName = "speed (iOS)";
+			productReference = 46D4D799273A6F49004D63C0 /* speed.app */;
+			productType = "com.apple.product-type.application";
+		};
+		46D4D79D273A6F49004D63C0 /* speed (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46D4D7AA273A6F49004D63C0 /* Build configuration list for PBXNativeTarget "speed (macOS)" */;
+			buildPhases = (
+				46D4D79A273A6F49004D63C0 /* Sources */,
+				46D4D79B273A6F49004D63C0 /* Frameworks */,
+				46D4D79C273A6F49004D63C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "speed (macOS)";
+			productName = "speed (macOS)";
+			productReference = 46D4D79E273A6F49004D63C0 /* speed.app */;
+			productType = "com.apple.product-type.application";
+		};
+		46D4D7B0273A6F98004D63C0 /* speedExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46D4D7C0273A6F99004D63C0 /* Build configuration list for PBXNativeTarget "speedExtension" */;
+			buildPhases = (
+				46D4D7AD273A6F98004D63C0 /* Sources */,
+				46D4D7AE273A6F98004D63C0 /* Frameworks */,
+				46D4D7AF273A6F98004D63C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = speedExtension;
+			productName = speedExtension;
+			productReference = 46D4D7B1273A6F98004D63C0 /* speedExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -89,6 +270,15 @@
 					46C404FF2730791400E91892 = {
 						CreatedOnToolsVersion = 13.1;
 						LastSwiftMigration = 1310;
+					};
+					46D4D798273A6F49004D63C0 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					46D4D79D273A6F49004D63C0 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					46D4D7B0273A6F98004D63C0 = {
+						CreatedOnToolsVersion = 13.1;
 					};
 				};
 			};
@@ -106,6 +296,9 @@
 			projectRoot = "";
 			targets = (
 				46C404FF2730791400E91892 /* fast-bar */,
+				46D4D798273A6F49004D63C0 /* speed (iOS) */,
+				46D4D79D273A6F49004D63C0 /* speed (macOS) */,
+				46D4D7B0273A6F98004D63C0 /* speedExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -115,7 +308,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4630E5AE273742F90043EE95 /* Assets.xcassets in Resources */,
+				46D4D7CB273A701C004D63C0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46D4D797273A6F49004D63C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46D4D7A5273A6F49004D63C0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46D4D79C273A6F49004D63C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46D4D7A6273A6F49004D63C0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46D4D7AF273A6F98004D63C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46D4D7B9273A6F99004D63C0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,14 +343,50 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4630E5B1273742F90043EE95 /* AppDelegate.swift in Sources */,
-				4630E5B0273742F90043EE95 /* main.swift in Sources */,
+				46D4D7CD273A701C004D63C0 /* AppDelegate.swift in Sources */,
 				4630E5AF273742F90043EE95 /* NetworkQuality.swift in Sources */,
-				4630E5B2273742F90043EE95 /* MenuBarViewController.swift in Sources */,
+				46D4D7CE273A701C004D63C0 /* main.swift in Sources */,
+				46D4D7CC273A701C004D63C0 /* MenuBarViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46D4D795273A6F49004D63C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46D4D7A3273A6F49004D63C0 /* ContentView.swift in Sources */,
+				46D4D7BC273A6F99004D63C0 /* speed.intentdefinition in Sources */,
+				46D4D7A1273A6F49004D63C0 /* speedApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46D4D79A273A6F49004D63C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46D4D7A4273A6F49004D63C0 /* ContentView.swift in Sources */,
+				46D4D7A2273A6F49004D63C0 /* speedApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46D4D7AD273A6F98004D63C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46D4D7BB273A6F99004D63C0 /* speed.intentdefinition in Sources */,
+				46D4D7B6273A6F98004D63C0 /* speed.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		46D4D7BE273A6F99004D63C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46D4D7B0273A6F98004D63C0 /* speedExtension */;
+			targetProxy = 46D4D7BD273A6F99004D63C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		46C4050D2730791500E91892 /* Debug */ = {
@@ -262,7 +515,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_FILE = menubar/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -288,7 +541,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_FILE = menubar/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -299,6 +552,176 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		46D4D7A8273A6F49004D63C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tfw.speed;
+				PRODUCT_NAME = speed;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46D4D7A9273A6F49004D63C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tfw.speed;
+				PRODUCT_NAME = speed;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46D4D7AB273A6F49004D63C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tfw.speed;
+				PRODUCT_NAME = speed;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		46D4D7AC273A6F49004D63C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tfw.speed;
+				PRODUCT_NAME = speed;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		46D4D7C1273A6F99004D63C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = app/widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = speed;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tfw.speed.speed;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46D4D7C2273A6F99004D63C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = app/widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = speed;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tfw.speed.speed;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -319,6 +742,33 @@
 			buildConfigurations = (
 				46C405102730791500E91892 /* Debug */,
 				46C405112730791500E91892 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46D4D7A7273A6F49004D63C0 /* Build configuration list for PBXNativeTarget "speed (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46D4D7A8273A6F49004D63C0 /* Debug */,
+				46D4D7A9273A6F49004D63C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46D4D7AA273A6F49004D63C0 /* Build configuration list for PBXNativeTarget "speed (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46D4D7AB273A6F49004D63C0 /* Debug */,
+				46D4D7AC273A6F49004D63C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46D4D7C0273A6F99004D63C0 /* Build configuration list for PBXNativeTarget "speedExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46D4D7C1273A6F99004D63C0 /* Debug */,
+				46D4D7C2273A6F99004D63C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
